@@ -1,5 +1,6 @@
 using Asp.Versioning;
 using CleanArchitectureProjectTemplate.Application.Extensions;
+using CleanArchitectureProjectTemplate.Persistence.Extensions;
 using CleanArchitectureProjectTemplate.WebApi.Extensions;
 using CleanArchitectureProjectTemplate.WebApi.OpenApi;
 using Microsoft.Extensions.Options;
@@ -45,6 +46,7 @@ try
     });
 
     builder.Services.AddApplication();
+    builder.Services.AddPersistence(builder.Configuration);
 
     var app = builder.Build();
 

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureProjectTem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureProjectTemplate.Domain", "Src\CleanArchitectureProjectTemplate.Domain\CleanArchitectureProjectTemplate.Domain.csproj", "{9C7CB2B2-2357-4778-9C00-D23E181B6831}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureProjectTemplate.Persistence", "Src\CleanArchitectureProjectTemplate.Persistence\CleanArchitectureProjectTemplate.Persistence.csproj", "{B6AD676B-54CF-4DD8-9C78-BDF6604B6F55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9C7CB2B2-2357-4778-9C00-D23E181B6831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C7CB2B2-2357-4778-9C00-D23E181B6831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C7CB2B2-2357-4778-9C00-D23E181B6831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6AD676B-54CF-4DD8-9C78-BDF6604B6F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AD676B-54CF-4DD8-9C78-BDF6604B6F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AD676B-54CF-4DD8-9C78-BDF6604B6F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AD676B-54CF-4DD8-9C78-BDF6604B6F55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
