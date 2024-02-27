@@ -1,8 +1,8 @@
 ﻿using System.Net;
+using CleanArchitectureProjectTemplate.Domain.Commons;
 using Microsoft.AspNetCore.Diagnostics;
 using Newtonsoft.Json;
 using Serilog;
-using VirtualManagerSystem.Domain.Commons;
 
 namespace CleanArchitectureProjectTemplate.WebApi.Extensions;
 
