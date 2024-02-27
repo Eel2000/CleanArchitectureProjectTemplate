@@ -27,9 +27,11 @@
 	<!--Default folders for the template-->
 	<ItemGroup>
 		<Folder Include="DTOs\" />
-		<Folder Include="Features\" />
-		<Folder Include="Services\" />
+		<Folder Include="Features\WeatherForecasts\Commands\" />
 		<Folder Include="Validators\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\CleanArchitectureProjectTemplate.Domain\CleanArchitectureProjectTemplate.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

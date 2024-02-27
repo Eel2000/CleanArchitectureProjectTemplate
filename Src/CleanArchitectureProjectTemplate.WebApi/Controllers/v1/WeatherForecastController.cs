@@ -6,10 +6,7 @@ namespace CleanArchitectureProjectTemplate.WebApi.Controllers.v1;
 [ApiVersion(1.0)]
 public class WeatherForecastController : BaseApiController
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+   
 
     private readonly ILogger<WeatherForecastController> _logger;
 

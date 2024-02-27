@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureProjectTem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureProjectTemplate.Application", "Src\CleanArchitectureProjectTemplate.Application\CleanArchitectureProjectTemplate.Application.csproj", "{F1ABD1EF-A24C-4DE2-BB53-39C08DE7082E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureProjectTemplate.Domain", "Src\CleanArchitectureProjectTemplate.Domain\CleanArchitectureProjectTemplate.Domain.csproj", "{9C7CB2B2-2357-4778-9C00-D23E181B6831}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F1ABD1EF-A24C-4DE2-BB53-39C08DE7082E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1ABD1EF-A24C-4DE2-BB53-39C08DE7082E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1ABD1EF-A24C-4DE2-BB53-39C08DE7082E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7CB2B2-2357-4778-9C00-D23E181B6831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7CB2B2-2357-4778-9C00-D23E181B6831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7CB2B2-2357-4778-9C00-D23E181B6831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7CB2B2-2357-4778-9C00-D23E181B6831}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
