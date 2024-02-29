@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+	<!--Default packages and refs for the template-->
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.9.0" />
+		<PackageReference Include="Serilog" Version="3.1.1" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="MediatR" Version="12.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.2.0" />
+		<PackageReference Include="UAParser" Version="3.1.47" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	
+	<!--Default folders for the template-->
+	<ItemGroup>
+		<Folder Include="DTOs\" />
+		<Folder Include="Features\WeatherForecasts\Commands\" />
+		<Folder Include="Validators\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\CleanArchitectureProjectTemplate.Domain\CleanArchitectureProjectTemplate.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

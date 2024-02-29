@@ -1,0 +1,148 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Eliezer Bwana",
+    "classifications": [
+        ".NET Clean Architecture Solution",
+        "Cloud",
+        "Services",
+        "Web",
+        "Api"
+    ],
+    "name": "ASP.NET API Clean-Architecture",
+    "description": "A project for create a full web api based application with Swagger, CQRS,REPOSITORY_PATTERN,Clean Architecture,Logging with serilog, Mapper with mapperly and much more.",
+    "defaultName": "cleanApplication1",
+    "identity": "Dotnet.Clean-Architecture.Api.CSharp",
+    "groupIdentity": "Dotnet.Clean-Architecture.API",
+    "shortName": "cln-arch-api",
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+    },
+    "sourceName": "CleanArchitectureProjectTemplate",
+    "preferNameDirectory": true,
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(!UnitTest)",
+                    "exclude": [
+                        "Tests/CleanArchitectureProjectTemplate.UnitTest/**/*"
+                    ]
+                },
+                {
+                    "exclude": [
+                        "**/[Bb]in/**",
+                        "**/[Oo]bj/**",
+                        ".template.config/**/*",
+                        "**/*.filelist",
+                        "**/*.user",
+                        "**/*.lock.json",
+                        "LICENSE.txt",
+                        "README.md",
+                        ".git",
+                        ".vs",
+                        ".github"
+                    ]
+                }
+            ]
+        }
+    ],
+    "symbols": {
+        "Title": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "Project Title",
+            "replaces": "PROJECT-TITLE",
+            "description": "The title of the project"
+        },
+        "ProjectDescription": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "All available api for <<the application/project name>> App",
+            "replaces": "PROJECT-DESCRIPTION",
+            "description": "the description about the project",
+            "displayName": "Doc description"
+        },
+        "Database": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "DatabaseName",
+            "replaces": "DATABASE",
+            "displayName": "Database Name",
+            "description": "The name of the SQL Database"
+        },
+        "ProductionConnectionString": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "Server=.\\SQLEXPRESS;Database=DATABASE;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True",
+            "replaces": "PRODUCTION-CONNECTION-STRING",
+            "displayName": "Production Connection string",
+            "description": "The SQL connection strin to use in Production"
+        },
+        "Contact": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "[user@example.com|@ExampleUser]",
+            "replaces": "PROJECT-CONTACT",
+            "description": "The contact details to use if someone wants to contact you about a security vulnerability or code of conduct issues."
+        },
+        "Author": {
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "company",
+            "replaces": "AUTHOR"
+        },
+        "UnitTest": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "true",
+            "displayName": "Include Unit Test",
+            "description": "Add Project unit test"
+        },
+        "HttpPort": {
+            "type": "parameter",
+            "datatype": "integer",
+            "description": "Port number to use for the HTTP endpoint in launchSettings.json."
+        },
+        "HttpPortGenerated": {
+            "type": "generated",
+            "generator": "port"
+        },
+        "HttpPortReplacer": {
+            "type": "generated",
+            "generator": "coalesce",
+            "parameters": {
+                "sourceVariableName": "HttpPort",
+                "fallbackVariableName": "HttpPortGenerated"
+            },
+            "replaces": "21974"
+        },
+        "HttpsPort": {
+            "type": "parameter",
+            "datatype": "integer",
+            "description": "Port number to use for the HTTPS endpoint in launchSettings.json."
+        },
+        "HttpsPortGenerated": {
+            "type": "generated",
+            "generator": "port",
+            "parameters": {
+                "low": 44300,
+                "high": 44399
+            }
+        },
+        "HttpsPortReplacer": {
+            "type": "generated",
+            "generator": "coalesce",
+            "parameters": {
+                "sourceVariableName": "HttpsPort",
+                "fallbackVariableName": "HttpsPortGenerated"
+            },
+            "replaces": "44349"
+        }
+    },
+    "primaryOutputs": [
+        {
+            "path": "CleanArchitectureProjectTemplate.sln"
+        }
+    ]
+}
