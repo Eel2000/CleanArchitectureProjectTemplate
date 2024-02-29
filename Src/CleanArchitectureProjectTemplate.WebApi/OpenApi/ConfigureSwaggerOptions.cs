@@ -17,13 +17,13 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
         {
             options.SwaggerDoc(description.GroupName, new OpenApiInfo
             {
-                Title = "Api portal title",
-                Description = "All available api for <<the application/project name>> App",
+                Title = "PROJECT-TITLE",
+                Description = "PROJECT-DESCRIPTION",
                 Version = description.ApiVersion.ToString(),
                 Contact = new OpenApiContact
                 {
-                    Email = "eliezerbwana@hotmail.com",//replace this by appropriate email
-                    Name = "Code24",//replace this by appropriate Company name
+                    Email = "PROJECT-CONTACT",//replace this by appropriate email
+                    Name = "AUTHOR",//replace this by appropriate Company name
                 }
             });
         }

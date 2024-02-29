@@ -5,9 +5,9 @@ namespace CleanArchitectureProjectTemplate.Persistence.Contexts;
 internal class DesignTimeApplicationDataContextFactory
 {
 #if DEBUG
-    private static string ConnectionString = "Server=.\\SQLEXPRESS;Database={DatabaseName};Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True";
+    private static string ConnectionString = "Server=.\\SQLEXPRESS;Database=DATABASE;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True";
 #elif RELEASE
-private static string ConnectionString = "";
+private static string ConnectionString = "PRODUCTION-CONNECTION-STRING";
 #endif
 
     public ApplicationDataContext CreateDbContext(string[] args)
